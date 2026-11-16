@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avernergy Solar – Clean Energy. Brighter Future.</title>
+  <meta name="description" content="Avernergy Solar designs and installs residential, commercial and industrial solar systems in Pakistan. Use the smart solar calculator to estimate your system size, price and savings." />
+  <meta name="theme-color" content="#0b2a5c" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    if (typeof tailwind !== 'undefined') tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 50: '#eef3fb', 100: '#d6e2f5', 600: '#1a4d96', 700: '#123a7a', 800: '#0b2a5c', 900: '#071a3d' },
+            sky: { 50: '#f1f9ff', 100: '#dff1ff', 200: '#bfe3ff', 300: '#8fd0ff', 400: '#5bb8f5', 500: '#2d9cdb', 600: '#1b7fc0' },
+            solar: { 300: '#ffd27a', 400: '#ffb347', 500: '#ff9a1f', 600: '#f5810a', 700: '#d96a00' },
+          },
+          fontFamily: {
+            display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+
+<body class="font-sans text-slate-700 bg-white antialiased">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ================= NAVBAR ================= -->
+  <header id="site-header" class="site-header">
+    <div class="container-x flex items-center justify-between h-[72px]">
+      <a href="#home" class="flex items-center gap-3" aria-label="Avernergy Solar – home">
+        <img src="assets/icons/logo.svg" alt="" width="42" height="42" class="rounded-xl shadow-md" />
+        <span class="leading-tight">
+          <span class="block font-display font-extrabold text-xl text-navy-800">Avernergy <span class="text-solar-500">Solar</span></span>
+          <span class="block text-[11px] font-medium text-slate-500 tracking-wide">Clean Energy. Brighter Future.</span>
+        </span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Main navigation">
+        <a data-nav-link class="nav-link" href="#home">Home</a>
+        <a data-nav-link class="nav-link" href="#why">Why Us</a>
+        <a data-nav-link class="nav-link" href="#services">Services</a>
+        <a data-nav-link class="nav-link" href="#packages">Packages</a>
+        <a data-nav-link class="nav-link" href="#calculator">Calculator</a>
+        <a data-nav-link class="nav-link" href="#projects">Projects</a>
+        <a data-nav-link class="nav-link" href="#faq">FAQ</a>
+        <a data-nav-link class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="#calculator" class="btn btn-primary btn-sm nav-cta">
+          <span class="inline-icon" data-icon="calculator"></span> Free Estimate
+        </a>
+        <button id="menu-toggle" type="button" class="lg:hidden icon-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"></button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu lg:hidden" hidden>
+      <nav class="container-x py-4 flex flex-col" aria-label="Mobile navigation">
+        <a class="m-link" href="#home">Home</a>
+        <a class="m-link" href="#why">Why Choose Us</a>
+        <a class="m-link" href="#services">Services</a>
+        <a class="m-link" href="#packages">Packages</a>
+        <a class="m-link" href="#calculator">Solar Calculator</a>
+        <a class="m-link" href="#projects">Projects</a>
+        <a class="m-link" href="#testimonials">Testimonials</a>
+        <a class="m-link" href="#faq">FAQ</a>
+        <a class="m-link" href="#contact">Contact</a>
+        <a href="#calculator" class="btn btn-primary mt-3">Calculate Your Solar System</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+      <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+
+      <div class="container-x relative grid lg:grid-cols-12 gap-12 items-center pt-32 pb-20 lg:pt-40 lg:pb-28">
+        <div class="lg:col-span-6">
+          <p class="eyebrow-pill reveal"><span class="inline-icon" data-icon="sun"></span> Clean Energy. Brighter Future.</p>
+          <h1 class="font-display font-extrabold text-navy-900 text-4xl sm:text-5xl xl:text-6xl leading-[1.08] mt-5 reveal">
+            Powering a <span class="gradient-text">Greener Pakistan</span>
+          </h1>
+          <p class="mt-6 text-lg text-slate-600 max-w-xl reveal">
+            Avernergy Solar designs, installs and maintains reliable solar systems for homes, businesses and factories. Cut your electricity bill, reduce your dependence on the grid and invest in clean energy that lasts.
+          </p>
+          <div class="mt-9 flex flex-wrap gap-3 reveal">
+            <a href="#packages" class="btn btn-primary btn-lg">Explore Packages <span class="inline-icon" data-icon="arrowRight"></span></a>
+            <a href="#calculator" class="btn btn-outline btn-lg"><span class="inline-icon" data-icon="calculator"></span> Calculate Your Solar System</a>
+          </div>
+          <ul class="mt-10 grid sm:grid-cols-3 gap-4 text-sm reveal">
+            <li class="hero-point"><span class="inline-icon text-solar-500" data-icon="checkCircle"></span> Free site-survey guidance</li>
+            <li class="hero-point"><span class="inline-icon text-solar-500" data-icon="checkCircle"></span> 3 kW to 10 kW systems</li>
+            <li class="hero-point"><span class="inline-icon text-solar-500" data-icon="checkCircle"></span> Honest, transparent estimates</li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-6 relative reveal">
+          <div class="hero-image-wrap">
+            <img src="assets/images/As the popularity of lithium batteries surges, solar inverters equipped with MPPT controllers have become essential components for optimizing solar energy systems_ These hybrid solutions not only enhance efficienc.jfif" alt="Rooftop solar panels connected to MPPT solar inverters under a bright blue sky" class="hero-image" width="736" height="736" fetchpriority="high" />
+          </div>
+          <div class="glass-card float-a">
+            <span class="glass-ico bg-solar-500"><span class="inline-icon" data-icon="calculator"></span></span>
+            <div><p class="text-xs text-slate-500">Smart Calculator</p><p class="font-display font-bold text-navy-800 text-sm">Estimate your system in seconds</p></div>
+          </div>
+          <div class="glass-card float-b">
+            <span class="glass-ico bg-sky-500"><span class="inline-icon" data-icon="bolt"></span></span>
+            <div><p class="text-xs text-slate-500">Packages</p><p class="font-display font-bold text-navy-800 text-sm">Sized for homes &amp; businesses</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-wave" aria-hidden="true"></div>
+    </section>
+
+    <!-- ================= WHY CHOOSE ================= -->
+    <section id="why" class="section">
+      <div class="container-x">
+        <div class="section-head reveal">
+          <p class="eyebrow">Why Choose Avernergy</p>
+          <h2>Solar that is designed around <span class="gradient-text">your usage</span></h2>
+          <p>We combine careful system design, quality components and clear communication so you always know what you are getting.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+          <article class="feature-card reveal"><span class="feature-ico" data-icon="calculator"></span><h3>Usage-based sizing</h3><p>We size your system from your real consumption, local sun hours and system efficiency – not from a one-size-fits-all package.</p></article>
+          <article class="feature-card reveal"><span class="feature-ico" data-icon="checkCircle"></span><h3>Quality components</h3><p>Tested panels, reliable inverters and proper mounting, earthing and surge protection for a safe, long-lasting installation.</p></article>
+          <article class="feature-card reveal"><span class="feature-ico" data-icon="currency"></span><h3>Transparent pricing</h3><p>Clear package details and honest payback estimates, with the final quote confirmed after a site survey.</p></article>
+          <article class="feature-card reveal"><span class="feature-ico" data-icon="shield"></span><h3>Warranty-backed</h3><p>Panel, inverter and workmanship warranties explained up front, so there are no surprises after installation.</p></article>
+          <article class="feature-card reveal"><span class="feature-ico" data-icon="grid"></span><h3>On-grid &amp; hybrid options</h3><p>Choose the setup that fits your needs – from grid-connected systems to hybrid systems with battery backup.</p></article>
+          <article class="feature-card reveal"><span class="feature-ico" data-icon="chat"></span><h3>Responsive support</h3><p>Talk to us on WhatsApp or by phone for guidance before, during and after installation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="section section-tint">
+      <div class="container-x">
+        <div class="section-head reveal">
+          <p class="eyebrow">Our Solar Services</p>
+          <h2>Complete solar solutions for every <span class="gradient-text">property</span></h2>
+          <p>From a small home rooftop to a large factory, we plan, install and look after your solar investment.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+          <article class="service-card reveal"><span class="service-ico" data-icon="home"></span><h3>Residential Solar Installation</h3><p>Rooftop systems that lower household bills and keep your home powered with clean energy.</p><a href="#calculator" class="service-link">Estimate my home <span class="inline-icon" data-icon="arrowRight"></span></a></article>
+          <article class="service-card reveal"><span class="service-ico" data-icon="building"></span><h3>Commercial Solar Solutions</h3><p>Shops, offices, schools and plazas – reduce daytime running costs with a tailored system.</p><a href="#contact" class="service-link">Talk to us <span class="inline-icon" data-icon="arrowRight"></span></a></article>
+          <article class="service-card reveal"><span class="service-ico" data-icon="factory"></span><h3>Industrial Solar Solutions</h3><p>Large rooftop and ground-mount systems engineered for factories and heavy daytime loads.</p><a href="#contact" class="service-link">Request a quote <span class="inline-icon" data-icon="arrowRight"></span></a></article>
+          <article class="service-card reveal"><span class="service-ico" data-icon="grid"></span><h3>On-Grid Solar Systems</h3><p>Grid-connected systems that offset your units without the cost of batteries.</p><a href="#packages" class="service-link">View packages <span class="inline-icon" data-icon="arrowRight"></span></a></article>
+          <article class="service-card reveal"><span class="service-ico" data-icon="battery"></span><h3>Hybrid Solar Systems</h3><p>Combine solar, grid and battery storage for backup power when you need it most.</p><a href="#contact" class="service-link">Ask about hybrid <span class="inline-icon" data-icon="arrowRight"></span></a></article>
+          <article class="service-card reveal"><span class="service-ico" data-icon="shield"></span><h3>Solar Maintenance</h3><p>Panel cleaning, performance checks and inverter servicing to keep output healthy year after year.</p><a href="#contact" class="service-link">Book a check-up <span class="inline-icon" data-icon="arrowRight"></span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PACKAGES ================= -->
+    <section id="packages" class="section">
+      <div class="container-x">
+        <div class="section-head reveal">
+          <p class="eyebrow">Solar Packages</p>
+          <h2>Choose the system that fits your <span class="gradient-text">needs</span></h2>
+          <p>Four popular sizes to start from. Not sure which one? Try the <a href="#calculator" class="text-link">Smart Solar Calculator</a>.</p>
+        </div>
+
+        <p class="sample-banner reveal"><span class="inline-icon" data-icon="info"></span><span><strong>Sample prices and specifications.</strong> The figures below are placeholders for demonstration. Final pricing and equipment are confirmed in your official quotation after a site survey.</span></p>
+
+        <div id="packages-grid" class="grid sm:grid-cols-2 xl:grid-cols-4 gap-6 mt-10"></div>
+        <p class="text-xs text-slate-500 mt-4">* Estimated generation uses average peak sun hours and an assumed system efficiency (see the calculator). Actual output varies with weather, shading and installation.</p>
+
+        <div class="text-center mt-10">
+          <button id="compare-toggle" type="button" class="btn btn-outline" aria-expanded="false" aria-controls="compare-panel"><span>Compare all packages</span></button>
+        </div>
+        <div id="compare-panel" class="mt-8" hidden>
+          <div id="compare-table-wrap" class="table-scroll"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SMART SOLAR CALCULATOR ================= -->
+    <section id="calculator" class="section calc-section">
+      <div class="container-x relative">
+        <div class="grid lg:grid-cols-5 gap-10 items-start">
+          <div class="lg:col-span-2 lg:sticky lg:top-28 reveal">
+            <p class="eyebrow">Smart Solar Calculator</p>
+            <h2 class="section-title">Find your ideal solar system in <span class="gradient-text">under a minute</span></h2>
+            <p class="mt-5 text-slate-600">Enter your monthly electricity bill or units. We work out your daily consumption, then size a system using your city's sun hours and a realistic system efficiency.</p>
+            <ol class="calc-steps">
+              <li><span>1</span> Choose bill or units</li>
+              <li><span>2</span> Select your city</li>
+              <li><span>3</span> Get capacity, price, savings and payback</li>
+            </ol>
+            <p class="mt-6 text-xs text-slate-500">Results are preliminary estimates, not guaranteed savings. Your final quotation follows a site survey.</p>
+          </div>
+
+          <div class="lg:col-span-3 reveal">
+            <div class="calc-card">
+              <div class="calc-toggle" role="tablist" aria-label="Calculation method">
+                <button type="button" role="tab" data-calc-mode="bill" class="is-active" aria-selected="true">By Electricity Bill</button>
+                <button type="button" role="tab" data-calc-mode="units" aria-selected="false" tabindex="-1">By Electricity Units</button>
+              </div>
+
+              <form id="calc-form" class="calc-form" novalidate>
+                <div class="field" data-field="bill">
+                  <label for="calc-bill">Monthly Electricity Bill (PKR) <span class="req-tag" data-kind="required">Required</span></label>
+                  <input id="calc-bill" name="bill" type="text" inputmode="decimal" placeholder="e.g. 25,000" autocomplete="off" />
+                  <p class="field-error" data-error-for="bill" role="alert"></p>
+                </div>
+                <div class="field" data-field="units">
+                  <label for="calc-units">Monthly Electricity Units (kWh) <span class="req-tag" data-kind="optional">Optional</span></label>
+                  <input id="calc-units" name="units" type="text" inputmode="decimal" placeholder="e.g. 650" autocomplete="off" />
+                  <p class="field-hint">Shown on your bill as “Units Consumed”. Adding it improves accuracy.</p>
+                  <p class="field-error" data-error-for="units" role="alert"></p>
+                </div>
+                <div class="field" data-field="city">
+                  <label for="calc-city">City</label>
+                  <select id="calc-city" name="city" data-city-select></select>
+                  <p class="field-error" data-error-for="city" role="alert"></p>
+                </div>
+                <div class="flex flex-wrap items-center gap-3 pt-2" style="order:4">
+                  <button type="submit" class="btn btn-primary btn-lg"><span class="inline-icon" data-icon="calculator"></span> Calculate My Package</button>
+                  <button type="button" id="calc-reset" class="btn btn-ghost">Reset</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div id="calc-results" class="calc-results" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECT GALLERY ================= -->
+    <section id="projects" class="section">
+      <div class="container-x">
+        <div class="section-head reveal">
+          <p class="eyebrow">Solar Image Gallery</p>
+          <h2>Installations built to <span class="gradient-text">perform</span></h2>
+          <p>Explore residential, commercial and industrial solar installations. Click any image to view it larger.</p>
+        </div>
+        <p class="sample-banner reveal"><span class="inline-icon" data-icon="info"></span><span><strong>Solar inspiration.</strong> These images show solar installations and equipment; add your own completed project photos here as they become available.</span></p>
+
+        <div class="flex flex-wrap justify-center gap-2 mt-10" role="group" aria-label="Filter projects">
+          <button type="button" class="chip is-active" data-gallery-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="chip" data-gallery-filter="residential" aria-pressed="false">Residential</button>
+          <button type="button" class="chip" data-gallery-filter="commercial" aria-pressed="false">Commercial</button>
+          <button type="button" class="chip" data-gallery-filter="industrial" aria-pressed="false">Industrial</button>
+        </div>
+
+        <div class="gallery-grid mt-10">
+          <figure class="gallery-item" data-category="residential" data-title="Solar Panels on a Jakarta Rooftop" data-desc="Residential · rooftop solar panels with a city skyline">
+            <button type="button" aria-label="View Solar Panels on a Jakarta Rooftop"><img src="assets/images/Solar panels on a Jakarta rooftop with city skyline.jfif" alt="Solar panels on a rooftop with a city skyline in the distance" loading="lazy" width="800" height="500" /><span class="gallery-overlay"><span class="tag tag-res">Residential</span><strong>Jakarta Rooftop Solar</strong><span class="inline-icon" data-icon="zoom"></span></span></button>
+          </figure>
+          <figure class="gallery-item" data-category="commercial" data-title="Solar EPC Installation" data-desc="Commercial · solar engineering, procurement and installation">
+            <button type="button" aria-label="View Solar EPC Installation"><img src="assets/images/Solar EPC Installation Services in India.jfif" alt="Solar panels installed as part of a solar EPC project" loading="lazy" width="800" height="500" /><span class="gallery-overlay"><span class="tag tag-com">Commercial</span><strong>Solar EPC Installation</strong><span class="inline-icon" data-icon="zoom"></span></span></button>
+          </figure>
+          <figure class="gallery-item" data-category="residential" data-title="Solar Panel Guide" data-desc="Residential · rooftop solar panels">
+            <button type="button" aria-label="View Solar Panel Guide"><img src="assets/images/What You Need to Know Before Buying Solar Panels -___.jfif" alt="Solar panels installed on a building rooftop" loading="lazy" width="800" height="500" /><span class="gallery-overlay"><span class="tag tag-res">Residential</span><strong>Rooftop Solar Panels</strong><span class="inline-icon" data-icon="zoom"></span></span></button>
+          </figure>
+          <figure class="gallery-item" data-category="commercial" data-title="Solar Grid Connect PV" data-desc="Commercial · grid-connected solar PV system">
+            <button type="button" aria-label="View Solar Grid Connect PV"><img src="assets/images/solar-grid-connect-pv.jfif" alt="Solar photovoltaic panels in a grid-connected installation" loading="lazy" width="800" height="500" /><span class="gallery-overlay"><span class="tag tag-com">Commercial</span><strong>Grid Connect PV</strong><span class="inline-icon" data-icon="zoom"></span></span></button>
+          </figure>
+          <figure class="gallery-item" data-category="industrial" data-title="Solar Energy Industry" data-desc="Industrial · solar energy systems and infrastructure">
+            <button type="button" aria-label="View Solar Energy Industry"><img src="assets/images/Energy Industry - Elimold.jfif" alt="Solar energy equipment at an industrial facility" loading="lazy" width="800" height="500" /><span class="gallery-overlay"><span class="tag tag-ind">Industrial</span><strong>Solar Energy Industry</strong><span class="inline-icon" data-icon="zoom"></span></span></button>
+          </figure>
+          <figure class="gallery-item" data-category="residential" data-title="Solar Rooftop Planning" data-desc="Residential · rooftop solar design and installation">
+            <button type="button" aria-label="View Solar Rooftop Planning"><img src="assets/images/solar-rooftop-planning.jfif" alt="Solar panels on a rooftop" loading="lazy" width="800" height="500" /><span class="gallery-overlay"><span class="tag tag-res">Residential</span><strong>Solar Rooftop Planning</strong><span class="inline-icon" data-icon="zoom"></span></span></button>
+          </figure>
+          <figure class="gallery-item" data-category="industrial" data-title="Solar Inverters and MPPT Controllers" data-desc="Industrial · hybrid solar inverters with MPPT controllers">
+            <button type="button" aria-label="View Solar Inverters and MPPT Controllers"><img src="assets/images/As the popularity of lithium batteries surges, solar inverters equipped with MPPT controllers have become essential components for optimizing solar energy systems_ These hybrid solutions not only enhance efficienc.jfif" alt="Two MPPT solar inverters connected to rooftop panels" loading="lazy" width="800" height="500" /><span class="gallery-overlay"><span class="tag tag-ind">Industrial</span><strong>MPPT Solar Inverters</strong><span class="inline-icon" data-icon="zoom"></span></span></button>
+          </figure>
+          <figure class="gallery-item" data-category="commercial" data-title="Solar Energy Installation" data-desc="Commercial · solar panels for clean energy">
+            <button type="button" aria-label="View Solar Energy Installation"><img src="assets/images/Nice Solar energy 2017_ The 6 Most Appealing Reasons to Install Solar Panels - Solar Power Authority Industrial News Check more at http___solarelectricsystem_top_blog_reviews_solar-energy-2017-the-6-most-appealing.jfif" alt="Solar panels installed for clean energy generation" loading="lazy" width="800" height="500" /><span class="gallery-overlay"><span class="tag tag-com">Commercial</span><strong>Solar Energy Installation</strong><span class="inline-icon" data-icon="zoom"></span></span></button>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section id="testimonials" class="section section-tint">
+      <div class="container-x">
+        <div class="section-head reveal">
+          <p class="eyebrow">Customer Testimonials</p>
+          <h2>What our customers <span class="gradient-text">say</span></h2>
+        </div>
+        <p class="sample-banner reveal"><span class="inline-icon" data-icon="info"></span><span><strong>Sample testimonials.</strong> These are placeholders. Replace them with genuine customer reviews in <code>CONFIG.testimonials</code> before launching.</span></p>
+        <div id="testimonials-grid" class="grid md:grid-cols-3 gap-6 mt-10"></div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section id="faq" class="section">
+      <div class="container-x max-w-3xl">
+        <div class="section-head reveal">
+          <p class="eyebrow">Frequently Asked Questions</p>
+          <h2>Answers to common <span class="gradient-text">questions</span></h2>
+        </div>
+        <div class="mt-12 space-y-3 reveal">
+          <div class="faq-item">
+            <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a1" id="faq-q1"><span>How is the recommended system size calculated?</span><span class="faq-ico" data-icon="chevron"></span></button></h3>
+            <div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1"><p>We convert your monthly units into daily consumption, then divide by your city's average peak sun hours and an assumed system efficiency. The result is the capacity (in kW) needed to cover your usage, and we recommend the closest suitable package.</p></div>
+          </div>
+          <div class="faq-item">
+            <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a2" id="faq-q2"><span>Are the calculator results guaranteed?</span><span class="faq-ico" data-icon="chevron"></span></button></h3>
+            <div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2"><p>No. They are preliminary estimates based on average conditions and a sample tariff. Actual savings depend on your real tariff, roof shading and orientation, weather, equipment and usage. A site survey gives the final design and quotation.</p></div>
+          </div>
+          <div class="faq-item">
+            <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a3" id="faq-q3"><span>What is the difference between on-grid and hybrid systems?</span><span class="faq-ico" data-icon="chevron"></span></button></h3>
+            <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3"><p>An on-grid system works together with the utility grid and does not need batteries. A hybrid system adds battery storage so you can keep essential loads running during outages, at a higher upfront cost.</p></div>
+          </div>
+          <div class="faq-item">
+            <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a4" id="faq-q4"><span>How long does installation take?</span><span class="faq-ico" data-icon="chevron"></span></button></h3>
+            <div class="faq-a" id="faq-a4" role="region" aria-labelledby="faq-q4"><p>Timelines depend on system size, site conditions and approvals. Many residential rooftop systems are installed within a few days once equipment is ready; we will confirm a schedule in your quotation.</p></div>
+          </div>
+          <div class="faq-item">
+            <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a5" id="faq-q5"><span>Do solar panels need maintenance?</span><span class="faq-ico" data-icon="chevron"></span></button></h3>
+            <div class="faq-a" id="faq-a5" role="region" aria-labelledby="faq-q5"><p>Very little. Periodic cleaning (especially in dusty areas) and an occasional performance check keep output healthy. We also offer maintenance services.</p></div>
+          </div>
+          <div class="faq-item">
+            <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a6" id="faq-q6"><span>Does this website place orders or store my details?</span><span class="faq-ico" data-icon="chevron"></span></button></h3>
+            <div class="faq-a" id="faq-a6" role="region" aria-labelledby="faq-q6"><p>No. This website has no backend. When you send an inquiry, it prepares a WhatsApp or email message for you to send yourself. Nothing is saved on a server and no purchase is made online.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section section-tint">
+      <div class="container-x">
+        <div class="section-head reveal">
+          <p class="eyebrow">Contact Us</p>
+          <h2>Let's plan your <span class="gradient-text">solar system</span></h2>
+          <p>Send us a message and we will get back to you with the next steps.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-5 gap-8 mt-14">
+          <div class="lg:col-span-2 space-y-4 reveal">
+            <div class="contact-item"><span class="contact-ico" data-icon="phone"></span><div><p class="contact-label">Phone</p><a data-config="phone" class="contact-value">+92 XXX XXXXXXX</a></div></div>
+            <div class="contact-item"><span class="contact-ico" data-icon="mail"></span><div><p class="contact-label">Email</p><a data-config="email" class="contact-value">info@your-domain.com</a></div></div>
+            <div class="contact-item"><span class="contact-ico" data-icon="pin"></span><div><p class="contact-label">Office</p><p data-config="address" class="contact-value">Office address placeholder</p></div></div>
+
+            <a data-whatsapp-link href="https://wa.me/" class="btn btn-whatsapp w-full"><span class="inline-icon" data-icon="chat"></span> Chat on WhatsApp</a>
+            <p class="notice-amber" data-wa-notice hidden>The company WhatsApp number has not been set yet (<code>CONFIG.contact.whatsappNumber</code>). WhatsApp will open without a recipient.</p>
+
+            <div>
+              <p class="contact-label mb-2">Follow us</p>
+              <div class="flex gap-2">
+                <a data-social="facebook" class="social-btn" aria-label="Facebook">f</a>
+                <a data-social="instagram" class="social-btn" aria-label="Instagram">ig</a>
+                <a data-social="linkedin" class="social-btn" aria-label="LinkedIn">in</a>
+                <a data-social="youtube" class="social-btn" aria-label="YouTube">yt</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-3 reveal">
+            <form id="contact-form" class="form-card" novalidate>
+              <h3 class="font-display font-bold text-xl text-navy-800">Send us a message</h3>
+              <div class="grid sm:grid-cols-2 gap-4 mt-5">
+                <div class="field"><label for="cf-name">Full name</label><input id="cf-name" name="name" type="text" autocomplete="name" placeholder="Your name" /><p class="field-error" data-error-for="name" role="alert"></p></div>
+                <div class="field"><label for="cf-phone">Phone number</label><input id="cf-phone" name="phone" type="tel" autocomplete="tel" placeholder="03XX XXXXXXX" /><p class="field-error" data-error-for="phone" role="alert"></p></div>
+              </div>
+              <div class="field mt-4"><label for="cf-email">Email <span class="req-tag" data-kind="optional">Optional</span></label><input id="cf-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" /><p class="field-error" data-error-for="email" role="alert"></p></div>
+              <div class="field mt-4"><label for="cf-message">Message</label><textarea id="cf-message" name="message" rows="4" placeholder="Tell us about your property and electricity usage"></textarea><p class="field-error" data-error-for="message" role="alert"></p></div>
+              <div class="flex flex-wrap gap-3 mt-6">
+                <button type="submit" class="btn btn-whatsapp"><span class="inline-icon" data-icon="chat"></span> Send via WhatsApp</button>
+                <button type="button" id="contact-email-btn" class="btn btn-outline"><span class="inline-icon" data-icon="mail"></span> Send via Email</button>
+              </div>
+              <p class="text-xs text-slate-500 mt-4">This website has no backend: these buttons prepare a message in WhatsApp or your email app for you to send. Nothing is stored on a server.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container-x py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <a href="#home" class="flex items-center gap-3"><img src="assets/icons/logo.svg" alt="" width="40" height="40" class="rounded-xl" /><span class="font-display font-extrabold text-xl text-white">Avernergy <span class="text-solar-400">Solar</span></span></a>
+        <p class="mt-4 text-sm text-sky-100/80">Clean Energy. Brighter Future.</p>
+        <p class="mt-2 text-sm text-sky-100/70">Powering a greener Pakistan with reliable solar systems.</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-list"><li><a href="#why">Why Choose Us</a></li><li><a href="#services">Services</a></li><li><a href="#packages">Packages</a></li><li><a href="#calculator">Solar Calculator</a></li><li><a href="#projects">Projects</a></li><li><a href="#faq">FAQ</a></li></ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-list"><li><a href="#services">Residential Solar</a></li><li><a href="#services">Commercial Solar</a></li><li><a href="#services">Industrial Solar</a></li><li><a href="#services">On-Grid Systems</a></li><li><a href="#services">Hybrid Systems</a></li><li><a href="#services">Maintenance</a></li></ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Contact</h4>
+        <ul class="footer-list">
+          <li data-config="phone">+92 XXX XXXXXXX</li>
+          <li data-config="email">info@your-domain.com</li>
+          <li data-config="address">Office address placeholder</li>
+        </ul>
+        <div class="flex gap-2 mt-4">
+          <a data-social="facebook" class="social-btn social-btn-dark" aria-label="Facebook">f</a>
+          <a data-social="instagram" class="social-btn social-btn-dark" aria-label="Instagram">ig</a>
+          <a data-social="linkedin" class="social-btn social-btn-dark" aria-label="LinkedIn">in</a>
+          <a data-social="youtube" class="social-btn social-btn-dark" aria-label="YouTube">yt</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="container-x py-6 flex flex-col sm:flex-row gap-2 justify-between text-xs text-sky-100/70">
+        <p>© <span data-year>2026</span> Avernergy Solar. All rights reserved.</p>
+        <p>Prices, specifications and savings shown are sample estimates, not an offer or guarantee.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING BUTTONS ================= -->
+  <a data-whatsapp-link href="https://wa.me/" class="wa-float" aria-label="Chat on WhatsApp"><span data-icon="chat"></span></a>
+  <button id="back-to-top" type="button" class="back-top" aria-label="Back to top"><span data-icon="arrowUp"></span></button>
+
+  <!-- ================= INQUIRY MODAL ================= -->
+  <div id="inquiry-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel">
+      <button type="button" class="modal-close" data-close-modal aria-label="Close"><span data-icon="x"></span></button>
+      <p class="eyebrow">Package inquiry</p>
+      <h3 id="modal-title" class="font-display font-extrabold text-2xl text-navy-800">Get this package</h3>
+      <p class="text-sm text-slate-500 mt-1">Fill in your details and we will prepare a WhatsApp message for you to send. This does not place an order.</p>
+
+      <form id="inquiry-form" class="mt-5 space-y-4" novalidate>
+        <div class="field"><label for="iq-name">Customer name</label><input id="iq-name" name="name" type="text" autocomplete="name" placeholder="Your full name" /><p class="field-error" data-error-for="name" role="alert"></p></div>
+        <div class="field"><label for="iq-phone">Phone number</label><input id="iq-phone" name="phone" type="tel" autocomplete="tel" placeholder="03XX XXXXXXX" /><p class="field-error" data-error-for="phone" role="alert"></p></div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="field"><label for="iq-city">City</label><select id="iq-city" name="city" data-city-select></select><p class="field-error" data-error-for="city" role="alert"></p></div>
+          <div class="field"><label for="iq-units">Monthly units (kWh) <span class="req-tag" data-kind="optional">Optional</span></label><input id="iq-units" name="units" type="text" inputmode="decimal" placeholder="e.g. 650" /><p class="field-error" data-error-for="units" role="alert"></p></div>
+        </div>
+        <div class="field"><label for="iq-package">Selected package</label><select id="iq-package" name="package"></select><p class="field-error" data-error-for="package" role="alert"></p></div>
+
+        <p class="notice-amber" data-wa-notice hidden>The company WhatsApp number has not been set yet (<code>CONFIG.contact.whatsappNumber</code>), so WhatsApp will open without a recipient.</p>
+
+        <div class="flex flex-wrap gap-3 pt-1">
+          <button type="submit" class="btn btn-whatsapp"><span class="inline-icon" data-icon="chat"></span> Send inquiry on WhatsApp</button>
+          <button type="button" class="btn btn-ghost" data-close-modal>Cancel</button>
+        </div>
+        <p class="text-xs text-slate-500">Nothing is saved on a server. Prices shown are sample prices; final quotation follows a site survey.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Project viewer" hidden>
+    <button type="button" id="lightbox-close" class="lb-btn lb-close" aria-label="Close viewer"><span data-icon="x"></span></button>
+    <button type="button" id="lightbox-prev" class="lb-btn lb-prev" aria-label="Previous project"><span data-icon="chevronLeft"></span></button>
+    <button type="button" id="lightbox-next" class="lb-btn lb-next" aria-label="Next project"><span data-icon="chevronRight"></span></button>
+    <figure class="lb-figure">
+      <img id="lightbox-img" src="" alt="" />
+      <figcaption><strong id="lightbox-title"></strong><span id="lightbox-desc"></span><small id="lightbox-counter"></small></figcaption>
+    </figure>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
